@@ -10,6 +10,7 @@ jobs:
         run: |
           echo "Hello World"
           env
+          exit 1
 
   secondary:
     uses: ./.github/workflows/secondary.yml

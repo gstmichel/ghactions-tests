@@ -13,3 +13,11 @@ jobs:
         run: |
           echo "Hello World"
           env
+
+  alwaysRun:
+    runs-on: ubuntu-latest
+    if: ${{ always()}}
+    steps:
+      - name: Always run
+        run: |
+          echo "Always run"
