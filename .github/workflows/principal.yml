@@ -12,6 +12,6 @@ jobs:
           env
 
   secondary:
-    uses: ./.github/workflows/secondary
+    uses: ./.github/workflows/secondary.yml
     needs: do-something
     if: ${{ always() }}
