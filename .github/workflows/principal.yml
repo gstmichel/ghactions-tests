@@ -13,6 +13,7 @@ jobs:
           echo "Hello, world!" > file
 
           echo $UID
+          echo $GID
 
           cat /etc/passwd
 
