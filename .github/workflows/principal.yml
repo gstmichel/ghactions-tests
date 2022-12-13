@@ -9,6 +9,11 @@ jobs:
       - name: Do something
         run: |
           whoami
+
+          echo "Hello, world!" > file
+
+          echo $UID
+
           cat /etc/passwd
 
   secondary:
