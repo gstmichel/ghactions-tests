@@ -11,8 +11,8 @@ jobs:
     steps:
       - name: Do something
         run: |
-          echo "Hello World"
-          env
+          whoami
+          cat /etc/passwd
 
   alwaysRun:
     needs: do-something

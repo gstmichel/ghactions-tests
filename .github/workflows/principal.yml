@@ -8,14 +8,8 @@ jobs:
     steps:
       - name: Do something
         run: |
-          echo "Hello World"
-          env
-          exit 1
-
-      - name: Do something
-        if: ${{ always()}}
-        run: |
-          env
+          whoami
+          cat /etc/passwd
 
   secondary:
     uses: ./.github/workflows/secondary.yml
